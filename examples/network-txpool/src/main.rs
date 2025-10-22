@@ -51,7 +51,7 @@ async fn main() -> eyre::Result<()> {
         .transactions(pool.clone(), transactions_manager_config)
         .split_with_handle();
 
-    // this can be used to interact with the `txpool` service directly
+    // this can be used to interact with the `txpoolExt` service directly
     let _txs_handle = txpool.handle();
 
     // spawn the network task
